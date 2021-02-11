@@ -14,10 +14,19 @@ namespace MVC7amThundersBatch
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+              name: "Default1",
+              url: "PistaHouse/Haleem",
+              defaults: new { controller = "New", action = "Index2", id = UrlParameter.Optional }
+          );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "New", action = "Index2", id = UrlParameter.Optional }
             );
+
+
+          
         }
     }
 }
