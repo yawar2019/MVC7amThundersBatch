@@ -16,5 +16,24 @@ namespace AdonetApproach.Controllers
         {
             return View(db.getEmployee());
         }
+
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Create(EmployeeModel emp)
+        {
+            int i = db.save(emp);
+            if (i > 0)
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View();
+            }
+        }
     }
 }
