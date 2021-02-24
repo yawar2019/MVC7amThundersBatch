@@ -1,4 +1,5 @@
-﻿using MVC7amThundersBatch.Models;
+﻿ 
+using MVC7amThundersBatch.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -148,6 +149,34 @@ namespace MVC7amThundersBatch.Controllers
             EDptobj.Dept = dept;
 
             return View(EDptobj);
+        }
+
+        public ActionResult HtmlHelperExample() {
+            AdonetApproach.Models.EmployeeContext db = new AdonetApproach.Models.EmployeeContext();
+            //EmployeeModel emp = new EmployeeModel();
+            //emp.EmpName = "Sai";
+            ViewBag.EmployeeDetail = new SelectList(db.getEmployee(), "EmpId", "EmpName");
+            return View();
+
+        }
+
+        public ActionResult ValidationExample()
+        {
+            
+            return View();
+
+        }
+        [HttpPost]
+        public ActionResult ValidationExample(RegisterModel r)
+        {
+            if (ModelState.IsValid)
+            {
+                return View();
+            }
+            else
+            {
+                return View();
+            }
         }
     }
 }

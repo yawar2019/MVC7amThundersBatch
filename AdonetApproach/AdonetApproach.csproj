@@ -158,6 +158,7 @@
     <Content Include="Views\EmployeeDet\Create.cshtml" />
     <Content Include="Views\EmployeeDet\Edit.cshtml" />
     <Content Include="Views\EmployeeDet\Delete.cshtml" />
+    <Content Include="Views\Shared\_TestLayout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -167,6 +168,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="img\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

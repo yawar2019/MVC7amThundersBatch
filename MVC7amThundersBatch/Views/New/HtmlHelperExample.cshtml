@@ -1,0 +1,47 @@
+﻿@using MVC7amThundersBatch.UserControl
+@model MVC7amThundersBatch.Models.EmployeeModel
+
+@{
+    ViewBag.Title = "HtmlHelperExample";
+}
+
+<h2>HtmlHelperExample</h2>
+
+@Html.TextBox("FirstName","hi",new {@style= "background-color:Brown;color:black;" ,@class="form-control",@id="txtFirstName" })<br />
+<input type="text" name="LastName" id="" value="Amith" style="background-color:dimgray;color:black;" /><br />
+@Html.TextBoxFor(x=>x.EmpName, new { @style = "background-color:violet;color:black;", @class = "form-control", @id = "txtFirstName" })
+
+<br />
+
+@Html.LabelFor(s=>s.EmpName)<br />
+
+@Html.Label("Email Id") @Html.EditorFor(s => s.EmpName)
+
+@Html.Password("Pwd","mypwd7123")
+<br />
+@Html.RadioButton("Gender","Male",true)<span>Male</span>
+@Html.RadioButton("Gender", "FeMale")<span>Female</span><br />
+
+@Html.CheckBox("Java")<span>Java</span>@Html.CheckBox("Html", true)<span>Html</span><br />
+@Html.DropDownList("Country",new List<SelectListItem>(){
+
+    new SelectListItem { Text="India",Value="1"},
+    new SelectListItem { Text="China",Value="2",Selected=true},
+    new SelectListItem { Text="Bangladesh",Value="3"},
+
+},"Select Country")<br />
+
+
+@Html.DropDownList("EmployeeDetail")<br />
+@Html.DropDownList("Emp",(IEnumerable<SelectListItem>)ViewBag.EmployeeDetail, "Select Employee")<br />
+@Html.TextArea("Address","Malakpet",10,90,null)<br />
+@myControl.MyLabel("I agree Content")<br />
+@Html.createUrControl("text")<br />
+@Html.createUrControl("file")<br />
+@Html.createUrControl("checkbox")<br />
+
+@helper labelbyrazzorcode(string content)
+{
+    <label>@content</label>
+}
+@labelbyrazzorcode("hi this is ali")
