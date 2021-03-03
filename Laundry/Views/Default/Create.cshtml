@@ -1,0 +1,21 @@
+﻿@model CodeFirstApproach.Models.EmployeeModel
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+
+    @Html.LabelFor(x => x.EmpName)
+    @Html.TextBoxFor(x => x.EmpName, new { @class = "form-control" })<br />
+
+    @Html.LabelFor(x => x.EmpSalary)
+    @Html.TextBoxFor(x => x.EmpSalary, new { @class = "form-control" })
+
+    <input type="submit" class="btn btn-success" value="Create"   />
+
+}
+
+

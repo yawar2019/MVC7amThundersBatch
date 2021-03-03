@@ -5,26 +5,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using MVC7amThundersBatch.MyFilter;
 namespace MVC7amThundersBatch.Controllers
 {
+    
     public class NewController : Controller
     {
         // GET: New
-        [NonAction]
-        public int Index()
+     [CustomFilter]
+        public ActionResult Index()
         {
-            return 1;
+            ViewBag.player = "Sachin";
+            return View();
         }
-
+     
         public string Index1()
         {
-            int a = Index();
-            return "Hello World value is :"+a;
+            //int a = Index();
+            return "Hello World value is :";
         }
-
+    
         public ActionResult Index2()
         {
+            
             return View() ;
         }
         public ActionResult Index3()
