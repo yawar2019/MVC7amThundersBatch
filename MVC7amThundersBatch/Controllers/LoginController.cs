@@ -18,6 +18,23 @@ namespace MVC7amThundersBatch.Controllers
             return View();
         }
 
+        [Authorize(Roles="Admin")]
+        public ActionResult AboutUs()
+        {
+            return View();
+        }
+
+
+        [Authorize(Roles = "Manager")]
+        public ActionResult ContactUS()
+        {
+            return View();
+        }
+
+
+
+
+
         public ActionResult Login()
         {
             return View();
