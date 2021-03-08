@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseFirstApproach", "Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelBasedApproach", "ModelBasedApproach\ModelBasedApproach.csproj", "{2FE7B8E0-CE63-4C60-AAB7-C33E7F643D50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandleErrorExample2", "HandleErrorExample2\HandleErrorExample2.csproj", "{B50B280B-BD6F-4EA7-AD22-51E4B2C51A3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2FE7B8E0-CE63-4C60-AAB7-C33E7F643D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FE7B8E0-CE63-4C60-AAB7-C33E7F643D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FE7B8E0-CE63-4C60-AAB7-C33E7F643D50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B50B280B-BD6F-4EA7-AD22-51E4B2C51A3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B50B280B-BD6F-4EA7-AD22-51E4B2C51A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B50B280B-BD6F-4EA7-AD22-51E4B2C51A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B50B280B-BD6F-4EA7-AD22-51E4B2C51A3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
