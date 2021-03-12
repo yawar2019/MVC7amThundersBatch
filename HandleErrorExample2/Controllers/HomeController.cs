@@ -12,7 +12,7 @@ namespace HandleErrorExample2.Controllers
         {
             return View();
         }
- [HandleError]
+      
         public ActionResult About()
         {
             try
@@ -35,5 +35,7 @@ namespace HandleErrorExample2.Controllers
 
             return View();
         }
+
+
     }
 }

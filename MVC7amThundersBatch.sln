@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC7amThundersBatch", "MVC7amThundersBatch\MVC7amThundersBatch.csproj", "{5076A2E1-F575-4B7C-8CB9-FA515F91D5CD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B50B280B-BD6F-4EA7-AD22-51E4B2C51A3C} = {B50B280B-BD6F-4EA7-AD22-51E4B2C51A3C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdonetApproach", "AdonetApproach\AdonetApproach.csproj", "{9632ED9E-21F1-43C5-8744-4BAE0F3996C9}"
 EndProject

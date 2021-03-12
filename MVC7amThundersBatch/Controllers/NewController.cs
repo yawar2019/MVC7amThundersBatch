@@ -1,4 +1,4 @@
-﻿ 
+﻿
 using MVC7amThundersBatch.Models;
 using System;
 using System.Collections.Generic;
@@ -8,54 +8,55 @@ using System.Web.Mvc;
 using MVC7amThundersBatch.MyFilter;
 namespace MVC7amThundersBatch.Controllers
 {
-    
+
     public class NewController : Controller
     {
         // GET: New
-     [CustomFilter]
+        [CustomFilter]
         public ActionResult Index()
         {
             ViewBag.player = "Sachin";
             return View();
         }
-     
+
         public string Index1()
         {
             //int a = Index();
             return "Hello World value is :";
         }
-    
+
         public ActionResult Index2()
         {
-            
-            return View() ;
+
+            return View();
         }
         public ActionResult Index3()
         {
             return Redirect("http://www.Google.com");
         }
 
-        public string  Index4(int? id)
+        public string Index4(int? id)
         {
-            return "Sai Employee id is :"+id;
+            return "Sai Employee id is :" + id;
         }
         public string Index5(int? eid)
         {
             return "Amit Employee id is :" + eid;
         }
 
-        public string Index6(int? id,string name,string Designation)
+        public string Index6(int? id, string name, string Designation)
         {
-            return "Employee id is :" + id+" Employee Name is "+name+" Designation is "+Designation;
+            return "Employee id is :" + id + " Employee Name is " + name + " Designation is " + Designation;
         }
 
         public string Index7(int? id)
         {
-            return "Employee id is :" + id + " Employee Name is " + Request.QueryString["name"] + " Designation is " + Request.QueryString["Designation"] ;
+            return "Employee id is :" + id + " Employee Name is " + Request.QueryString["name"] + " Designation is " + Request.QueryString["Designation"];
         }
 
-        public ActionResult SendHello() {
-           
+        public ActionResult SendHello()
+        {
+
             ViewBag.info = 1;
             return View();
         }
@@ -105,7 +106,7 @@ namespace MVC7amThundersBatch.Controllers
             obj.EmpId = 1;
             obj.EmpName = "Sai Krupa";
             obj.EmpSalary = 250000;
-            
+
             return View(obj);
         }
 
@@ -136,7 +137,8 @@ namespace MVC7amThundersBatch.Controllers
             return View(listObj);
         }
 
-        public ActionResult getEmpDept() {
+        public ActionResult getEmpDept()
+        {
 
             EmployeeModel obj = new EmployeeModel();
             obj.EmpId = 1;
@@ -154,7 +156,8 @@ namespace MVC7amThundersBatch.Controllers
             return View(EDptobj);
         }
 
-        public ActionResult HtmlHelperExample() {
+        public ActionResult HtmlHelperExample()
+        {
             AdonetApproach.Models.EmployeeContext db = new AdonetApproach.Models.EmployeeContext();
             //EmployeeModel emp = new EmployeeModel();
             //emp.EmpName = "Sai";
@@ -165,7 +168,7 @@ namespace MVC7amThundersBatch.Controllers
 
         public ActionResult ValidationExample()
         {
-            
+
             return View();
 
         }
@@ -180,6 +183,15 @@ namespace MVC7amThundersBatch.Controllers
             {
                 return View();
             }
+        }
+
+        [HttpGet]
+        public ActionResult GetAddService()
+        {
+            ServiceReference1.WebService1SoapClient obj = new ServiceReference1.WebService1SoapClient();
+            ViewBag.result=obj.Add(12, 20);
+            return View();
+
         }
     }
 }
