@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MVC7amThundersBatch.MyFilter;
+
 namespace MVC7amThundersBatch.Controllers
 {
 
@@ -188,7 +189,9 @@ namespace MVC7amThundersBatch.Controllers
         [HttpGet]
         public ActionResult GetAddService()
         {
-            ServiceReference1.WebService1SoapClient obj = new ServiceReference1.WebService1SoapClient();
+            WcfServiceReference.Service1Client obj = new WcfServiceReference.Service1Client();
+
+            //ServiceReference1.WebService1SoapClient obj = new ServiceReference1.WebService1SoapClient();
             ViewBag.result=obj.Add(12, 20);
             return View();
 

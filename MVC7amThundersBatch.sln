@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelBasedApproach", "Model
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandleErrorExample2", "HandleErrorExample2\HandleErrorExample2.csproj", "{B50B280B-BD6F-4EA7-AD22-51E4B2C51A3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{A422449B-75E9-4BC2-A36C-7837260C30C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{B50B280B-BD6F-4EA7-AD22-51E4B2C51A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B50B280B-BD6F-4EA7-AD22-51E4B2C51A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B50B280B-BD6F-4EA7-AD22-51E4B2C51A3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A422449B-75E9-4BC2-A36C-7837260C30C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A422449B-75E9-4BC2-A36C-7837260C30C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A422449B-75E9-4BC2-A36C-7837260C30C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A422449B-75E9-4BC2-A36C-7837260C30C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

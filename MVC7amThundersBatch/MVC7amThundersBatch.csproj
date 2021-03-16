@@ -173,6 +173,13 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Service References\WcfServiceReference\Service1.disco" />
+    <None Include="Service References\WcfServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\WcfServiceReference\configuration.svcinfo" />
+    <None Include="Service References\WcfServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Web.config" />
     <Content Include="Views\New\Index2.cshtml" />
   </ItemGroup>
@@ -219,6 +226,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\WcfServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\myControl.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -249,6 +261,13 @@
     <Content Include="Views\Login\CacheExample.cshtml" />
     <None Include="Service References\ServiceReference1\WebService1.wsdl" />
     <Content Include="Views\New\GetAddService.cshtml" />
+    <None Include="Service References\WcfServiceReference\Service1.wsdl" />
+    <None Include="Service References\WcfServiceReference\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WcfServiceReference\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -273,6 +292,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+    <WCFMetadataStorage Include="Service References\WcfServiceReference\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
