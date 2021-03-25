@@ -20,7 +20,13 @@
         </tr>
     </thead>
 </table>
+<form>
 
+    EmpName <input type="text" name="EmpName" id="EmpName" /><br />
+    EmpSalary <input type="text" name="EmpSalary" id="EmpSalary" /><br />
+    
+    <p id="Save">Click me</p>
+</form>
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script>
         onload = function showdata() {
@@ -38,5 +44,14 @@
             });
         }
 
+
+        $('#Save').click(function () {
+            var url = "http://localhost:53014/api/employeeDetailsApi/PostemployeeDetail";
+            var EmpName = $("#EmpName").val();
+            var EmpSalary = $("#EmpSalary").val();
+            $.post(url, { EmpName: EmpName, EmpSalary: EmpSalary }, function (data) {
+                alert('Inserted Successfully');
+            });
+        })
          
 </script>
