@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandleErrorExample2", "Hand
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{A422449B-75E9-4BC2-A36C-7837260C30C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaundrySystem", "LaundrySysstem\LaundrySystem.csproj", "{291D4486-7F44-4428-939B-7FF4B860AE15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,10 @@ Global
 		{A422449B-75E9-4BC2-A36C-7837260C30C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A422449B-75E9-4BC2-A36C-7837260C30C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A422449B-75E9-4BC2-A36C-7837260C30C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{291D4486-7F44-4428-939B-7FF4B860AE15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{291D4486-7F44-4428-939B-7FF4B860AE15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{291D4486-7F44-4428-939B-7FF4B860AE15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{291D4486-7F44-4428-939B-7FF4B860AE15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

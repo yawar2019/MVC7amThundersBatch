@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5076A2E1-F575-4B7C-8CB9-FA515F91D5CD}</ProjectGuid>
+    <ProjectGuid>{291D4486-7F44-4428-939B-7FF4B860AE15}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MVC7amThundersBatch</RootNamespace>
-    <AssemblyName>MVC7amThundersBatch</AssemblyName>
+    <RootNamespace>LaundrySysstem</RootNamespace>
+    <AssemblyName>LaundrySysstem</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -43,14 +43,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -84,9 +76,6 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -128,122 +117,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Site.css" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\EmployeeLoginModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>EmployeeLoginModel.Context.cs</LastGenOutput>
-      <DependentUpon>EmployeeLoginModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\EmployeeLoginModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EmployeeLoginModel.edmx</DependentUpon>
-      <LastGenOutput>EmployeeLoginModel.cs</LastGenOutput>
-    </Content>
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
-    <Content Include="scripts\bootstrap.js" />
-    <Content Include="scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\EmployeeLoginModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>EmployeeLoginModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\EmployeeLoginModel.edmx.diagram">
-      <DependentUpon>EmployeeLoginModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="Areas\Admin\Views\web.config" />
-    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\Admin\Views\Default\Index.cshtml" />
-    <Content Include="Areas\Manager\Views\web.config" />
-    <Content Include="Areas\Manager\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\Manager\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\Manager\Views\Test\Index.cshtml" />
-    <None Include="scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="scripts\jquery-1.10.2.js" />
-    <Content Include="scripts\jquery-1.10.2.min.js" />
-    <None Include="scripts\jquery.validate-vsdoc.js" />
-    <Content Include="scripts\jquery.validate.js" />
-    <Content Include="scripts\jquery.validate.min.js" />
-    <Content Include="scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="scripts\modernizr-2.6.2.js" />
-    <Content Include="Service References\ServiceReference1\MVC7amThundersBatch.ServiceReference1.HelloWorldResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Service References\ServiceReference1\WebService1.disco" />
-    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
-    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
-    <None Include="Service References\ServiceReference1\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Service References\WcfServiceReference\Service1.disco" />
-    <None Include="Service References\WcfServiceReference\configuration91.svcinfo" />
-    <None Include="Service References\WcfServiceReference\configuration.svcinfo" />
-    <None Include="Service References\WcfServiceReference\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
     <Content Include="Web.config" />
-    <Content Include="Views\New\Index2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
-    <Compile Include="Areas\Admin\Controllers\DefaultController.cs" />
-    <Compile Include="Areas\Manager\Controllers\TestController.cs" />
-    <Compile Include="Areas\Manager\ManagerAreaRegistration.cs" />
-    <Compile Include="Controllers\LoginController.cs" />
-    <Compile Include="Controllers\NewController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\DepartmentModel.cs" />
-    <Compile Include="Models\EmpDeptModel.cs" />
-    <Compile Include="Models\EmployeeLoginModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmployeeLoginModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EmployeeLoginModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmployeeLoginModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EmployeeLoginModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmployeeLoginModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\EmployeeModel.cs" />
-    <Compile Include="Models\RegisterModel.cs" />
-    <Compile Include="Models\Role.cs">
-      <DependentUpon>EmployeeLoginModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\UserDetail.cs">
-      <DependentUpon>EmployeeLoginModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\UserRoleMapping.cs">
-      <DependentUpon>EmployeeLoginModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\UserRoleProvider.cs" />
-    <Compile Include="MyFilter\CustomFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\ServiceReference1\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Service References\WcfServiceReference\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\myControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -251,35 +135,6 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\New\SendHello.cshtml" />
-    <Content Include="Views\New\SendEmployeeDetails.cshtml" />
-    <Content Include="Views\New\SendMultipleEmpDet.cshtml" />
-    <Content Include="Views\New\sendOneEmployeebyModel.cshtml" />
-    <Content Include="Views\New\sendMulitipleEmployeebyModel.cshtml" />
-    <Content Include="Views\New\getEmpDept.cshtml" />
-    <Content Include="Views\New\HtmlHelperExample.cshtml" />
-    <Content Include="Views\New\ValidationExample.cshtml" />
-    <Content Include="Views\New\Index.cshtml" />
-    <Content Include="Views\Login\Login.cshtml" />
-    <Content Include="Views\Login\Index.cshtml" />
-    <Content Include="Views\Login\AboutUs.cshtml" />
-    <Content Include="Views\Login\ContactUS.cshtml" />
-    <Content Include="Views\Login\CacheExample.cshtml" />
-    <None Include="Service References\ServiceReference1\WebService1.wsdl" />
-    <Content Include="Views\New\GetAddService.cshtml" />
-    <None Include="Service References\WcfServiceReference\Service1.wsdl" />
-    <None Include="Service References\WcfServiceReference\Service1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\WcfServiceReference\Service11.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -289,24 +144,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Manager\Models\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AdonetApproach\AdonetApproach.csproj">
-      <Project>{9632ED9E-21F1-43C5-8744-4BAE0F3996C9}</Project>
-      <Name>AdonetApproach</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
-    <WCFMetadataStorage Include="Service References\WcfServiceReference\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -321,9 +160,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>58729</DevelopmentServerPort>
+          <DevelopmentServerPort>51289</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:58729/</IISUrl>
+          <IISUrl>http://localhost:51289/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
